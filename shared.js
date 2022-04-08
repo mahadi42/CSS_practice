@@ -1,4 +1,4 @@
-alert('thisworks');
+
 
 var backdrop = document.querySelector('.back-drop');
 var modal = document.querySelector('.modal');

@@ -1,1 +1,0 @@
-modalNoButton.addEventListener('click', closeModal);
