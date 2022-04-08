@@ -1,4 +1,4 @@
-body{
+body {
   max-width: 100%;
 }
 #product-overview {
@@ -8,7 +8,7 @@ body{
   background-size: 100%;
   vertical-align: middle;
   height: 40vh;
-  width: 100vw;
+  width: 100%;
   background-size: 100% auto;
   background-position: center;
   margin-top: 5.2rem;
@@ -35,7 +35,7 @@ body{
   display: inline-block;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) /* and (mix-height: 40rem) */ {
   #product-overview {
     height: 70vh;
     background-position: 50% 20%;
@@ -59,35 +59,25 @@ body{
   background-color: #9a93ff4d;
   padding: 3rem 0rem;
 }
-.plans_list {
-  width: 100%;
-
-  
-  text-align: center;
-}
-
-
 
 .plan {
   background-color: #7768ff91;
   text-align: center;
-  
+  display: block;
   width: 100%;
   padding: 1rem;
-  margin: .5rem auto;
-  vertical-align: middle;
+  margin: 0.5rem 0rem;
   text-align: center;
   list-style: none;
 }
 
-
 .plan--highlighted {
   background-color: #5b50fdea;
-  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 .plan_annotation {
   vertical-align: middle;
   text-align: center;
+  font-size: 1rem;
 
   background-color: rgba(0, 255, 255, 0.527);
   border-radius: 5px;
@@ -133,6 +123,26 @@ body{
   background-color: rgba(25, 221, 221, 0.445);
 }
 
+@media (min-width: 40rem) {
+  .plans_list {
+    width: 100%;
+    text-align: center;
+  }
+  .plan {
+    display: inline-block;
+    width: 29%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem;
+    margin: 0.5rem 0.2rem;
+    min-width: 12rem;
+    max-width: 22.5rem;
+  }
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+  }
+}
+
 #key_features > h1 {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -143,9 +153,9 @@ body{
 
 .key_feature {
   list-style: none;
-
-  display: inline-block;
+  padding-left: 0%;
   width: 100%;
+  border: none;
 }
 
 .key-feature__list {
@@ -153,10 +163,11 @@ body{
   font-weight: bold;
   font-size: 22px;
   font-family: inherit;
-  display: inherit;
-  width: 33%;
+  display: block;
+  width: 100%;
   text-align: center;
-  vertical-align: top;
+
+  padding: 0rem;
 }
 .key-feature__img {
   padding: 2rem 2rem;
@@ -172,6 +183,24 @@ body{
 .key-feature__dis {
   margin-top: 1.37rem;
   font-family: inherit;
+}
+
+@media (min-width: 40rem) and (orientation: landscape) {
+  .key_feature {
+    width: 100%;
+    text-align: center;
+
+  }
+  .key-feature__list {
+    /* padding: 0.3rem 0rem; */
+    /* margin-bottom: 0.2rem; */
+    display: inline-block;
+    width: 30%;
+    margin: 0.2rem auto;
+
+    text-align: center;
+    vertical-align: top;
+  }
 }
 
 .modal {
