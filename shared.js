@@ -1,4 +1,5 @@
-alert('this works');
+alert('thisworks');
+
 var backdrop = document.querySelector('.back-drop');
 var modal = document.querySelector('.modal');
 var selectPlanButtons = document.querySelectorAll('.plan button')
@@ -22,7 +23,6 @@ backdrop.addEventListener('click', function() {
     closeModal();
 });
 
-modalNoButton.addEventListener('click', closeModal);
 
 
 function closeModal() {
@@ -37,3 +37,5 @@ function toggleShit() {
 
 
 toggleButton.addEventListener('click', toggleShit)
+
+modalNoButton.addEventListener('click', closeModal);

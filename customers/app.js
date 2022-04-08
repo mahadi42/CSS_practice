@@ -1,4 +1,4 @@
-var toggle = document.querySelectorAll('.toggle-button')
+var toggle = document.querySelector('.toggle-button')
 
 function testing () {
     alert('this works')
@@ -8,4 +8,4 @@ function testing () {
 toggle.addEventListener('click', testing)
 
 
-console.log(toogle)
+console.log(toggle);
