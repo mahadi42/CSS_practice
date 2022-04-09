@@ -5,8 +5,7 @@ body{
     padding: 0%;
     width: 100%;
     height: 100%;
-    width: 100%;
-    height: 100%;
+   
     
 }
 
@@ -16,10 +15,18 @@ body{
 .background{
     background: url(/images/290377.png) center/cover;
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: -6;
     position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+  
+  background-repeat: no-repeat;
+  
+
 }
 
 
@@ -117,4 +124,19 @@ body{
     border: 4px solid rgb(31, 204, 138);
     border-right: none;
     
+}
+@media (min-width: 60rem) {
+    main {
+        margin: 1rem auto;
+        max-width: 80rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    .package {
+        border: 4px solid black;
+    }
+    #free{
+        border-right: 4px solid black;
+    }
 }
