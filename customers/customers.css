@@ -1,6 +1,9 @@
 body{
     background-color: rgb(129, 186, 186);
 }
+main{
+    padding: 5rem;
+}
 .testimonial {
     margin: auto ;
     text-align: center;
@@ -11,9 +14,9 @@ body{
 }
 /*  */
 
-.testimonial:first-of-type {
+/* .testimonial:first-of-type {
     margin-top: 96px;
-}
+} */
 .testimonial__image-container{
     width: 90%;
     
